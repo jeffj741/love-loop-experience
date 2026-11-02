@@ -310,9 +310,9 @@ const views = {
   },
   guided_response: {
     phase: "A LITTLE SPACE TO RETURN",
-    title: "Breathe with me",
-    description: "Find a pace that feels right.",
-    caption: "IN · OUT",
+    title: "Follow the rhythm",
+    description: "When your Loop is connected, let its gentle haptic pattern guide your pace.",
+    caption: "HAPTIC RHYTHM · PREVIEW ONLY",
     actions: [["I’m ready", "return", "primary"], ["Stay a moment", "stay", "secondary"]],
     insightKicker: "THE MOMENT IS STILL YOURS",
     insight: "No rush to move on",
