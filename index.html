@@ -1,0 +1,64 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#080d18"><meta name="description" content="Love Loop — simulation-only static visual preview"><title>Love Loop™ — Experience Preview</title><link rel="icon" href="./favicon-32.png"><link rel="stylesheet" href="./style.css"></head><body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="brand-slot"><img src="./love-loop-metallic.png" alt="Love Loop™" width="2170" height="725"></div>
+      <span class="preview-label">STATIC PREVIEW · NO LIVE DATA</span>
+    </header>
+
+    <main class="experience" id="experience">
+      <div class="intro-row">
+        <div class="eyebrow"><span class="eyebrow-line"></span><span id="eyebrowText">YOUR SPACE</span></div>
+        <div class="mode-switch" role="group" aria-label="Experience mode">
+          <button class="mode-button selected" type="button" data-mode="for_me" aria-pressed="true">For Me</button>
+          <button class="mode-button" type="button" data-mode="between_us" aria-pressed="false">Between Us</button>
+        </div>
+      </div>
+
+      <section class="moment" aria-live="polite">
+        <div class="moment-copy">
+          <p class="overline" id="phaseLabel">RIGHT NOW</p>
+          <h1 id="headline">You’re settled<span class="period">.</span></h1>
+          <p class="description" id="description">There is room to simply be here.</p>
+        </div>
+
+        <div class="visual-wrap">
+          <div class="visual-caption" id="visualCaption">A QUIET MOMENT · SIMULATED</div>
+        </div>
+
+        <section class="passenger-presence" id="passengerPresence" aria-label="Passenger companion" hidden>
+          <span class="passenger-orbit" aria-hidden="true"><span class="passenger-core"></span></span>
+          <div class="passenger-copy">
+            <span class="passenger-eyebrow">YOUR PASSENGER · STANDBY</span>
+            <p class="passenger-headline" id="passengerHeadline">LB is here in preview.</p>
+            <p class="passenger-subtitle" id="passengerSubtitle">A simulated standby presence. No conversation, data, or actuation is connected.</p>
+          </div>
+        </section>
+        <div class="actions" id="actions"></div>
+        <button class="insight-link" id="insightButton" type="button">
+          <span class="insight-line"></span>
+          <span class="insight-content"><span class="insight-kicker" id="insightKicker">A LITTLE MORE, IF YOU WANT IT</span><span class="insight-title" id="insightTitle">3 example patterns</span></span>
+          <span class="insight-arrow" aria-hidden="true">↗</span>
+        </button>
+      </section>
+
+      <nav class="lower-nav" aria-label="Explore">
+        <button type="button" id="homeButton" data-action="home" aria-current="page"><span class="nav-symbol" aria-hidden="true">⌂</span><span>Home</span></button>
+        <button type="button" id="historyButton" data-open="history"><span class="nav-symbol" aria-hidden="true">◷</span><span>Moments</span></button>
+        <button type="button" id="connectButton" data-action="connect"><span class="nav-symbol" aria-hidden="true">∞</span><span>Connect</span></button>
+      </nav>
+    </main>
+
+    <footer class="site-footer"><span id="simNotice">Local simulation · No sensor or pairing data</span></footer>
+  </div>
+
+  <div class="overlay" id="overlay" hidden>
+    <div class="overlay-scrim" data-close-overlay></div>
+    <section class="detail-sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle" tabindex="-1">
+      <div class="sheet-topline">
+        <span id="sheetKicker">MOMENTS OVER TIME</span>
+        <button class="close-button" type="button" aria-label="Close" data-close-overlay>×</button>
+      </div>
+      <div id="sheetContent"></div>
+    </section>
+  </div>
+<script src="./app.js" defer></script></body></html>
